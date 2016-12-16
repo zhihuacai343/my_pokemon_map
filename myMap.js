@@ -4,7 +4,7 @@ map_manager = {
     "map_items":[]
 }
 
-map_manger.map_items = [
+map_manager.map_items = [
     {
         "pokemon_id":13,
         "expire":1481867157,
