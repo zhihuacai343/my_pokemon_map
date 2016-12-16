@@ -63,7 +63,7 @@ function loadMapScenario() {
     });
     
     map_manager.map = map;
-    refresh();
+    window.setInterval(refresh(),1000);
     
     }
 }
