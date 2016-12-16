@@ -8,7 +8,7 @@ map_manger.map_items = [
     {
         "pokemon_id":13,
         "expire":1481867157,
-        "longitude":-73.45,
+        "longitude":-73.46,
         "latitude":40.75
     },
         {
