@@ -84,6 +84,7 @@ function loadMapScenario() {
     });
     
     map_manager.map = map;
+    query_pokemon_data();
     window.setInterval(refresh(),1000);
     
     }
