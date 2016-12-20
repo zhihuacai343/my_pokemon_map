@@ -20,6 +20,27 @@ map_manager.map_items = [
     
 ]
 
+
+function query_pokemon_data(){
+    var bounds = map_manager.map.getBounds();
+    var apigClient = apigClientFactory.newClient();
+    var params = {
+        //This is where any header, path, or querystring request params go. The key is the parameter named as defined in the API
+        north: bounds.getNorth(),
+        east: bounds.getEast(),
+        south: bounds.getSouth(),
+        west: bounds.getWest(),
+    };
+   
+    apigClient.mapPokemonGet(params, {}, {})
+        .then(function(result){
+            console.log(result);
+            //This is where you would put a success callback
+        }).catch( function(result){
+            //This is where you would put an error callback
+        });
+}
+
 function getCountDown(expire){
     var now_time = new Date.getTime()/1000;
     var left_time = expire-now_time;
