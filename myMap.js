@@ -54,7 +54,7 @@ function refresh(){
     //prepare the push pins.
     var layer = new Microsoft.Maps.Layer();
     var pushpins = [];
-    for (var i in map_manger.map_items){
+    for (var i in map_manager.map_items){
         
         var map_item = map_manager.map_items[i];
         var iconurl = 'https://raw.githubusercontent.com/chenditc/mypokemon.io/gh-pages/images/pushpin_images/pokemon/' + map_item['pokemon_id']+'1.png'
