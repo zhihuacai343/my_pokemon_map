@@ -52,7 +52,7 @@ function getCountDown(expire){
 
 function refresh(){
     //prepare the push pins.
-    var layer = new Microsoft.Maps.layer();
+    var layer = new Microsoft.Maps.Layer();
     var pushpins = [];
     for (var i in map_manger.map_items){
         
