@@ -31,6 +31,9 @@ function query_pokemon_data(){
         south: bounds.getSouth(),
         west: bounds.getWest(),
     };
+    
+    
+    console.log(params);
    
     apigClient.mapPokemonGet(params, {}, {})
         .then(function(result){
