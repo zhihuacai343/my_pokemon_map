@@ -66,6 +66,8 @@ function refresh(){
         var iconurl = 'https://raw.githubusercontent.com/chenditc/mypokemon.io/gh-pages/images/pushpin_images/pokemon/' + map_item['pokemon_id']+'.png'
         var count_down = getCountDown(map_item["expire"]);
         
+        console.log(map_item["latitude"],map_item["longitude"])
+        
         var pushpin = new Microsoft.Maps.Pushpin(new Microsoft.Maps.Location(map_item["latitude"], map_item["longitude"]), { 
             icon: iconurl,
             title: count_down
