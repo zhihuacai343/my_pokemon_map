@@ -49,9 +49,9 @@ function query_pokemon_data(){
 
 function getCountDown(expire){
     var now_time = new Date().getTime()/1000;
-    var left_time = expire-now_time;
+    var left_time = Math.floor(expire-now_time);
     var seconds = left_time % 60;
-    var minutes = left_time / 60;
+    var minutes = Math.floor(left_time / 60);
     return minutes + " : " + seconds;
 }
 
