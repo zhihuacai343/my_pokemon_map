@@ -75,7 +75,7 @@ function refresh(){
         //map.entities.push(pushpin);
         pushpins.push(pushpin);
      }
-    layer.add(pushpin);
+    layer.add(pushpins);
     
     //clear old pushpins;
     map_manager.map.layers.clear();
